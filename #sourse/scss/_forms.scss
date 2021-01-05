@@ -162,18 +162,29 @@ textarea {
 	appearance: none;
 }
 .input {
+	// border: 1px solid #000;
+	border-top: 1px solid #000;
+	height: 50px;
 	border-radius: 0 !important;
 	width: 100%;
+	font-size: 15px;
 	display: block;
 	padding: 0px 20px;
+	background-color: #f8f7f7;
 	&.focus {
+		border-top: 1px solid blue;
 	}
 	&.err {
+		border-top: 1px solid red;
 	}
 }
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	height: 117px;
+	@media (max-width:$md3+0px){
+		height: 50px;	
+	}
+	padding: 10px 20px;
 }
 //</INPUT>====================================================================================================
 

@@ -514,5 +514,139 @@ body {
 	}
 }
 //====================================================================================================
+.contacts {
+	padding: 180px 0px 100px 0px;
+	@media (max-width:$md2+0px){
+		padding: 80px 0px 50px 0px;
+	}
+	@media (max-width:$md3+0px){
+		padding: 30px 0px 30px 0px;
+	}
+	// .contacts_social
+	&_social {
+
+	}
+	// .contacts__header-block
+	&__header-block {
+		margin: 0px 0px 120px 0px;
+		@media (max-width:$md3+0px){
+			margin: 0px 0px 80px 0px;
+		}
+		@media (max-width:$md4+0px){
+			margin: 0px 0px 50px 0px;
+		}
+	}
+	// .contacts__body
+	&__body {
+		@include flexbox();
+		margin: 0px -25px;
+		@media (max-width:$md3+0px){
+			display: block;
+		}
+	}
+	// .contacts__column
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 25px;
+	}
+	// .contacts__form
+	&__form {
+		text-align: right;   				/* чтобы выровнять кнопку */
+		@media (max-width:$md3+0px){
+			text-align: left;
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .contacts__content
+	&__content {
+		max-width: 260px;
+		@media (max-width:$md3+0px){		/* растягиваем по ширине */
+			max-width: none;
+		}
+	}
+	// .contacts__text
+	&__text {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 26px;
+		margin: 0px 0px 35px 0px;
+	}
+	// .contacts__name
+	&__name {
+		font-size: 14px;
+		font-weight: 700;
+		margin: 0px 0px 25px 0px;
+	}
+	// .contacts__mail
+	&__mail {
+		font-size: 14px;
+		a{
+			font-weight: 700;
+			color: #000;
+			&:hover{text-decoration: underline;}
+		}
+	}
+}
+
+.form-contacts {
+	&__body {
+		display: inline-block;				/* чтобы не было отступов по краям от инпутов */
+		width: 100%;
+		max-width: 385px;						/* ограничиваем форму по ширине */
+		@media (max-width:$md3+0px){		/* растягиваем форму на весь экран по ширине */
+			max-width: none;
+			display: block;
+		}
+
+	}
+	// .form-contacts__row
+	&__row {
+		@include flexbox();
+		margin: 0px -15px 70px -15px;
+		@media (max-width:$md4+0px){
+			display: block;					/* инпуты друг под другом */
+			margin: 0px -15px 30px -15px;
+		}
+	}
+	// .form-contacts__column
+	&__column {
+		flex: 0 1 50%;
+		padding: 0px 15px;
+		@media (max-width:$md4+0px){
+			&:first-child{margin: 0px 0px 30px 0px;}
+		}
+	}
+	// .form-contacts__input
+	&__input {
+	}
+	// .form-contacts__label
+	&__label {
+		font-size: 14px;	
+		font-weight: 700;
+		text-align: left;
+		margin: 0px 0px 15px 0px;
+		text-transform: uppercase;
+	}
+	// .form-contacts__btn
+	&__btn.btn {
+		margin: 35px 0px 0px 0px;
+		@media (max-width:$md3+0px){
+			display: block;					/* растягиваем кнопку по ширине */
+			width: 100%;
+		}
+	}
+}
+.input {
+}
+.social {
+	margin: 0px 0px 15px 0px;
+	@include flexbox();	
+	// .social__item
+	&__item {
+		margin: 0px 15px 0px 0px;
+	}
+}
+
+//====================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
