@@ -306,31 +306,14 @@ textarea {
 }
 
 .input {
-	border-top: 1px solid #000;
-	height: 50px;
 	border-radius: 0 !important;
 	width: 100%;
-	font-size: 15px;
 	display: block;
 	padding: 0px 20px;
-	background-color: #f8f7f7;
 }
-.input.focus {
-	border-top: 1px solid blue;
-}
-.input.err {
-	border-top: 1px solid red;
-}
-
 textarea.input {
 	resize: none;
-	height: 117px;
-	padding: 10px 20px;
-}
-@media (max-width: 767.98px) {
-	textarea.input {
-		height: 50px;
-	}
+	padding: 0px 0px;
 }
 
 .check {
@@ -1655,6 +1638,8 @@ body.ie .ibg img {
 		margin: 0px 0px 30px 0px;
 		padding: 0px 15px;
 	}
+<<<<<<< HEAD
+=======
 }
 .contacts {
 	padding: 180px 0px 100px 0px;
@@ -1807,4 +1792,5 @@ body.ie .ibg img {
 }
 .social__item {
 	margin: 0px 15px 0px 0px;
+>>>>>>> parent of 1f79120... On (no branch): ok
 }
