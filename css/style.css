@@ -1649,7 +1649,7 @@ body.ie .ibg img {
 }
 
 .partners {
-	background: url("../../img/partners/bg.jpg") center/cover no-repeat;
+	background: url("../img/partners/bg.jpg") center/cover no-repeat;
 	padding: 100px 0px 30px 0px;
 }
 @media (max-width: 767.98px) {
