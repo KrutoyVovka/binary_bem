@@ -308,6 +308,8 @@ function mainblock() {
 }
 mainblock();
 
+//-------------------------------------------------------------------------------
+// фильтр в блоке портфолио
 
 $('.filter__item').click(function (event) {
 	var i = $(this).data('filter');
@@ -322,3 +324,10 @@ $('.filter__item').click(function (event) {
 	return false;
 });
 
+//-------------------------------------------------------------------------------
+// параллакс-эффект при скролле блока mainblock
+
+$(window).scroll(function (event) {
+	var s = 0 - $(this).scrollTop() / 1.5;
+	$('.mainblock__image').css('transform', 'translate3d(0, ' + s + 'px, 0)');
+});
