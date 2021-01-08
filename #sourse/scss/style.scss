@@ -421,7 +421,7 @@ body {
 	// .portfolio__column
 	&__column {
 		flex: 0 1 50%;
-		max-width: 50%; /* для IE  */
+		max-width: 50%; /* для IE потомучто у родителя fw:w */
 		padding: 0px 15px;
 		margin: 0px 0px 30px 0px;
 		@media (max-width: $md3+0px) {
@@ -538,7 +538,7 @@ body {
 		@include flexbox();
 		margin: 0px -25px;
 		@media (max-width: $md3+px) {
-			display: block;
+			display: block; /* отменяем колонки */
 		}
 	}
 	// .contacts__column
@@ -595,8 +595,8 @@ body {
 		width: 100%;
 		max-width: 385px;
 		@media (max-width: $md3+px) {
+			display: block; /* отменяем колонки */
 			max-width: none;
-			display: block;
 		}
 	}
 	// .form-contacts__row
@@ -634,7 +634,7 @@ body {
 	&__btn.btn {
 		margin: 35px 0px 0px 0px;
 		@media (max-width: $md3+px) {
-			display: block;
+			display: block; /* растягиваем на всю ширину */
 			width: 100%;
 		}
 	}
